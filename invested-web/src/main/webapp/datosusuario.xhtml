@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:h="http://java.sun.com/jsf/html"
+  xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+  <title>Examen Invested Web</title>
+</h:head>
+
+<h:body>
+  <h:form >
+
+    <p:panel header="Datos del usuario">
+      <h:panelGrid columns="2" cellpadding="4">
+        <h:outputText value="Usuario: " />
+        <h:outputText value="#{holaMundoController.usuario}"/>
+
+        <p:commandButton value="Salir" action="#{holaMundoController.logout}" ajax="false"/>
+      </h:panelGrid>
+    </p:panel>
+
+  </h:form>
+</h:body>
+</html>
